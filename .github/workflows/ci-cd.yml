@@ -29,7 +29,7 @@ jobs:
 
       - name: Run automated tests
         run: |
-          pytest -v
+          PYTHONPATH=. pytest -v
 
       - name: Build Docker image
         run: |
